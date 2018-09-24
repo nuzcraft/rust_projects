@@ -56,4 +56,42 @@ fn main() {
 	println!("heart_eyed_cat: {}", heart_eyed_cat);
 
 	// COMPOUND TYPES
+	// 2 primitive types, tuples and arrays; used to group multiple values into one type
+	// tuples is a general way of grouping values
+	// they have a fixed length and cannot grow or shring
+	let tup: (i32, f64, u8) = (500, 6.1, 1); // tup is bound to the entire tuple
+	// we can use pattern matching to pull the individual values out of the tuple
+	let (x, y, z) = tup; // this is called destructuring
+	println!("x: {}", x);
+	println!("y: {}", y);
+	println!("z: {}", z);
+	// another way to do it is to use a . followed by the index that we want
+	let five_hundred = tup.0;
+	println!("five_hundred: {}", five_hundred);
+	let six_point_one = tup.1;
+	println!("six_point_one: {}", six_point_one);
+	let one = tup.2;
+	println!("one: {}", one);
+
+	// arrays are similar; every element must have the same type, but are still a fixed length
+	let a = [1, 2, 3, 4, 5];
+	// arrarys allocate data on the stack rather than the heap
+	// the vector type is similar to an array, but can grow and shrink
+	// arrays are useful when you know you'll never need to add or remove items
+	// e.g. months in a year
+	let months = ["January", "February", "March", "April", "May", "June", "July",
+        "August", "September", "October", "November", "December"];
+	// arrays are denoted by [type; number]
+	let a: [i32; 5] = [1, 2, 3, 4, 5];
+	// you can access the elements of an array with an index
+	let first = a[0];
+	println!("first: {}", first);
+	let second = a[1];
+	println!("second: {}", second);
+	// trying to access an element pas the end of the array will result compile
+	// but will produce a runtime error
+	let index = 10;
+	let element = a[index]; //Rust will panic here, noticing that the index is greater
+	// than the length of the array and will exit the program immediately
+	println!("The value of element is: {}", element); // this line is never run
 }

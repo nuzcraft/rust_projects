@@ -6,3 +6,4 @@ Currently, the repo includes the following:
 * hello_cargo - https://doc.rust-lang.org/stable/book/2018-edition/ch01-03-hello-cargo.html
 * guessing_game - https://doc.rust-lang.org/stable/book/2018-edition/ch02-00-guessing-game-tutorial.html
 * variables - https://doc.rust-lang.org/stable/book/2018-edition/ch03-01-variables-and-mutability.html
+* ch03_02 (data types) - https://doc.rust-lang.org/book/2018-edition/ch03-02-data-types.html 
