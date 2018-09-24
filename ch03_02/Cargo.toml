@@ -1,0 +1,6 @@
+[package]
+name = "ch03_02"
+version = "0.1.0"
+authors = ["nuzcraft <nuzcraft@gmail.com>"]
+
+[dependencies]
