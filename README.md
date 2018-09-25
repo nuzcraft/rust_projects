@@ -7,3 +7,4 @@ Currently, the repo includes the following:
 * guessing_game - https://doc.rust-lang.org/stable/book/2018-edition/ch02-00-guessing-game-tutorial.html
 * variables - https://doc.rust-lang.org/stable/book/2018-edition/ch03-01-variables-and-mutability.html
 * ch03_02 (data types) - https://doc.rust-lang.org/book/2018-edition/ch03-02-data-types.html 
+* functions - https://doc.rust-lang.org/book/2018-edition/ch03-03-how-functions-work.html
