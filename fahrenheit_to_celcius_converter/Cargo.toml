@@ -1,0 +1,6 @@
+[package]
+name = "fahrenheit_to_celcius_converter"
+version = "0.1.0"
+authors = ["nuzcraft <nuzcraft@gmail.com>"]
+
+[dependencies]

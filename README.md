@@ -8,3 +8,5 @@ Currently, the repo includes the following:
 * variables - https://doc.rust-lang.org/stable/book/2018-edition/ch03-01-variables-and-mutability.html
 * ch03_02 (data types) - https://doc.rust-lang.org/book/2018-edition/ch03-02-data-types.html 
 * functions - https://doc.rust-lang.org/book/2018-edition/ch03-03-how-functions-work.html
+* branches - https://doc.rust-lang.org/book/2018-edition/ch03-05-control-flow.html
+* fahrenheit_to_celcius_converter - https://doc.rust-lang.org/book/2018-edition/ch03-05-control-flow.html#summary
