@@ -10,3 +10,4 @@ Currently, the repo includes the following:
 * functions - https://doc.rust-lang.org/book/2018-edition/ch03-03-how-functions-work.html
 * branches - https://doc.rust-lang.org/book/2018-edition/ch03-05-control-flow.html
 * fahrenheit_to_celcius_converter - https://doc.rust-lang.org/book/2018-edition/ch03-05-control-flow.html#summary
+* nth_fib_number - https://doc.rust-lang.org/book/2018-edition/ch03-05-control-flow.html#summary
