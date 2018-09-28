@@ -11,3 +11,4 @@ Currently, the repo includes the following:
 * branches - https://doc.rust-lang.org/book/2018-edition/ch03-05-control-flow.html
 * fahrenheit_to_celcius_converter - https://doc.rust-lang.org/book/2018-edition/ch03-05-control-flow.html#summary
 * nth_fib_number - https://doc.rust-lang.org/book/2018-edition/ch03-05-control-flow.html#summary
+* twelve_days_of_christmas - https://doc.rust-lang.org/book/2018-edition/ch03-05-control-flow.html#summary
