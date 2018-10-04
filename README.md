@@ -14,3 +14,4 @@ Currently, the repo includes the following:
 * twelve_days_of_christmas - https://doc.rust-lang.org/book/2018-edition/ch03-05-control-flow.html#summary
 * ownership - https://doc.rust-lang.org/book/2018-edition/ch04-01-what-is-ownership.html
 * references - https://doc.rust-lang.org/book/2018-edition/ch04-02-references-and-borrowing.html
+* slices - https://doc.rust-lang.org/book/2018-edition/ch04-03-slices.html
