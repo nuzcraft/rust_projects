@@ -15,3 +15,4 @@ Currently, the repo includes the following:
 * ownership - https://doc.rust-lang.org/book/2018-edition/ch04-01-what-is-ownership.html
 * references - https://doc.rust-lang.org/book/2018-edition/ch04-02-references-and-borrowing.html
 * slices - https://doc.rust-lang.org/book/2018-edition/ch04-03-slices.html
+* structs - https://doc.rust-lang.org/book/2018-edition/ch05-01-defining-structs.html
