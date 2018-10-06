@@ -17,3 +17,4 @@ Currently, the repo includes the following:
 * slices - https://doc.rust-lang.org/book/2018-edition/ch04-03-slices.html
 * structs - https://doc.rust-lang.org/book/2018-edition/ch05-01-defining-structs.html
 * rectangles - https://doc.rust-lang.org/book/2018-edition/ch05-02-example-structs.html
+* rectangle_2 - https://doc.rust-lang.org/book/2018-edition/ch05-03-method-syntax.html
