@@ -19,3 +19,4 @@ Currently, the repo includes the following:
 * rectangles - https://doc.rust-lang.org/book/2018-edition/ch05-02-example-structs.html
 * rectangle_2 - https://doc.rust-lang.org/book/2018-edition/ch05-03-method-syntax.html
 * enum_ch6 - https://doc.rust-lang.org/book/2018-edition/ch06-01-defining-an-enum.html
+* match_control_flow - https://doc.rust-lang.org/book/2018-edition/ch06-02-match.html
