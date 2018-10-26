@@ -138,5 +138,42 @@ fn main() {
     // will happen in the _ case.
 
     // the match expression can be a bit wordy in a situation in which we only care about one
-    // of the cases. For this situation, Rust provides if let (see next project)
+    // of the cases. For this situation, Rust provides if let.
+
+    // CONCISE CONTROL FLOW WITH IF LET
+
+    // if let syntax lets you combind if and let into a less verbose way to handles values
+    // that match one pattern while ignoring the rest. Below is a match example:
+    let some_u8_value = Some(0u8);
+    match some_u8_value {
+        Some(3) => println!("three"),
+        _ => (),
+    }
+    // if let provides a shorter way of doing this
+    let some_u8_value = Some(3u8);
+    if let Some(3) = some_u8_value {
+        println!("three");
+    }
+    // the syntax takes a pattern and expression separated by an =. It works the same as a 
+    // match, where the expression is given to the match  and the pattern is its first arm
+    // However, this loses the exhaustive checking that match inforces
+
+    // we can also include an else clause that can handle the same block of code that the _
+    // case of a match would handle. See below for the same example, one with match and the 
+    // other with if let
+
+    let mut count = 0;
+    let coin = CoinWithState::Quarter(UsState::Alabama);
+    match coin {
+        CoinWithState::Quarter(state) => println!("State quarter from {:?}", state),
+        _ => count += 1,
+    }
+
+    let coin = CoinWithState::Quarter(UsState::Alaska);
+    if let CoinWithState::Quarter(state) = coin {
+        println!("State quarter from {:?}", state);
+    } else {
+        count += 1;
+    }
+
 }
