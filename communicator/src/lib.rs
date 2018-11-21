@@ -79,9 +79,9 @@ mod network2 {
 // We can split things up so that not everything lives in src/lib.rs or src/main.rs
 // let's replace the client mod with only a declaration of the client module
 
-mod client;
+mod client2;
 
-mod network {
+mod network3 {
     fn connect() {
 
     }
@@ -96,6 +96,52 @@ mod network {
 // declaring the client mod like this tells Rust to look in another location for the code
 // defined within the client scope. We can create a client.rs file in the src/ directory
 // to hold this code.
+// mod client;
+// essential means
+// mod client {
+//    // contents of client.rs
+// }
+
+// now we can extract the network module into its own file
+mod client3;
+
+mod network4; // enter this file for more info
+
+// extracting the server mod out of the network mod in the following 
+mod client5;
+
+mod network5;
+// note that in the file explorer, network5 is a directory within the src directory. the
+// code that was previously in the network.rs file is now in the mod.rs file.
+// communicator
+//  ├── client
+//  └── network
+//      └── server
+// The corresponding file layout now looks like this:
+
+
+// └── src
+//     ├── client.rs
+//     ├── lib.rs
+//     └── network
+//         ├── mod.rs
+//         └── server.rs
+// we do this so that rust can absolutely know which modules are sub-modules of other modules
+// and we can avoid any issues surrounding modules with similar names (such as if we wanted)
+// a client module within the network module.
+
+// RULES OF MODULE FILESYSTEMS
+// If a module named foo has no submodules, you should put the declarations for foo in a file
+// named foo.rs.
+// if a module named foo does have submodules, you should put the declarations for foo in a
+// file named foo/mod.rs
+// these rules apply recursively, so if a module named foo has a submodule named bar and bar
+// does not have any submodules, you should have the following in your src directory:
+// └── foo
+//     ├── bar.rs (contains the declarations in `foo::bar`)
+//     └── mod.rs (contains the declarations in `foo`, including `mod bar`)
+// the modules shouold be declared in their parent module's file using the mod keyword
+// next, we'll talk about the pub keyword and get rid of those warnings!
 
 
 #[cfg(test)]
