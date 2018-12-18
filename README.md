@@ -21,3 +21,4 @@ Currently, the repo includes the following:
 * enum_ch6 - https://doc.rust-lang.org/book/2018-edition/ch06-01-defining-an-enum.html
 * match_control_flow - https://doc.rust-lang.org/book/2018-edition/ch06-02-match.html
 * communicator - https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
+* vectors - https://doc.rust-lang.org/book/ch08-01-vectors.html
