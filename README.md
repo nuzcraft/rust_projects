@@ -23,3 +23,4 @@ Currently, the repo includes the following:
 * communicator - https://doc.rust-lang.org/book/2018-edition/ch07-00-modules.html
 * vectors - https://doc.rust-lang.org/book/ch08-01-vectors.html
 * strings - https://doc.rust-lang.org/book/ch08-02-strings.html
+* hash_maps - https://doc.rust-lang.org/book/ch08-03-hash-maps.html
