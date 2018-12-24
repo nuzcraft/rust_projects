@@ -24,3 +24,4 @@ Currently, the repo includes the following:
 * vectors - https://doc.rust-lang.org/book/ch08-01-vectors.html
 * strings - https://doc.rust-lang.org/book/ch08-02-strings.html
 * hash_maps - https://doc.rust-lang.org/book/ch08-03-hash-maps.html
+* chapter_8_exercises - https://doc.rust-lang.org/book/ch08-03-hash-maps.html#summary
