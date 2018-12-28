@@ -3,3 +3,4 @@
 // can be accessed from outside this file
 pub mod mean_median_mode;
 pub mod pig_latin;
+pub mod text_interface;
