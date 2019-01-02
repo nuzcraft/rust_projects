@@ -1,8 +1,45 @@
 use std::collections::HashMap;
+use std::io;
+
 pub fn main() {
-    // Given a list of integers, use a vector and return the mean, median, and mode of the list
-    let mut v: Vec<i32> = vec![1, 5, 31, 0, 59, 2, 0, 29, 29]; 
+
+    println!("Welcome to Mean, Median, Mode.");
+    println!("Please input an integer.");
+
+    // ask the user to print an integer
+    let mut input = String::new();
+    io::stdin().read_line(&mut input)
+        .expect("Failed to read line"); // we'll want to switch to a match to handle
+
+    let int: i32 = input.trim().parse()
+        .expect("Please type a number!"); // we'll want to switch to a match to handle
+    
+    // create a blank vector
+    let mut v: Vec<i32> = Vec::new();
+    // push the typed integer into the vector
+    v.push(int);
+    println!("The current vector is: {:?}", v);
+
+    // create a loop to let the user add integers if desired
+    loop {
+        // ask for an integer, place it in a new string each time
+        println!("Please input an integer or 'end'.");
+        let mut input2 = String::new();
+        io::stdin().read_line(&mut input2)
+            .expect("Failed to read line");
+        match input2.as_str().trim() {
+            "end" => break, // if 'end' is typed, break our of the loop
+            _ => {
+                let int: i32 = input2.trim().parse()
+                    .expect("Please type a number!"); // if an int is typed, add it to the vectors, else crash
+                v.push(int);
+                println!("The current vector is: {:?}", v);
+            },
+        }
+    }
+
     v.sort(); // sort the vector (must be mutable)
+    println!("The vector is {:?}", v);
     
     // Get the number of elements in the vector; assert that this cannot be 0
     let len: i32 = v.len() as i32;
@@ -25,7 +62,7 @@ pub fn main() {
         println!("The median is: {}", v[median_index]);
     } else {
         // if there's an even number, we need to find the average of the two middle values
-        let first_median_index: usize = (len as usize) / 2;
+        let first_median_index: usize = ((len as usize) / 2) - 1;
         let second_median_index = &first_median_index + 1;
         let median: f64 = (v[first_median_index] as f64 + v[second_median_index] as f64) / 2 as f64;
         println!("The median is: {}", median);
@@ -53,6 +90,7 @@ pub fn main() {
         }
     }
     // IMPORTANT: {:?} is the debug mode print, vectors do not have a legitimate print mode
+    mode_v.sort();
     println!("The mode(s) are: {:?}", mode_v);
 }
 
