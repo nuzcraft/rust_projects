@@ -24,7 +24,7 @@ fn main() {
                 println!(""); // print a newline
                 },
             "b" => {
-                exercises::pig_latin::main(String::from("hello"));
+                exercises::pig_latin::main();
                 println!(""); // print a newline
                 },
             "exit" => {
